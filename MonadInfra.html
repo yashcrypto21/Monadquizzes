@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz App</title>
+<style>
+    /* Some basic styling */
+    body {
+        font-family: Aeonik Mono;
+        background-color: #200052;
+        color: white;
+    }
+    h1{
+        font-family: "Hoves Pro", sans-serif; /* Apply Hoves Pro font to all headings */
+        font-size: 36px;
+        color: #A0055D;
+        text-align: center;
+    }
+    p {
+        font-size: 22px;
+        color:black; 
+        
+    }
+    label {
+    font-size: 18px; /* Set font size for labels */
+}
+    .quiz-container {
+        max-width: 90%;
+        margin: 20px auto;
+        padding: 20px;
+        border: 2px solid #ccc;
+        border-radius: 20px;
+        background-color: #836EF9; /* Set quiz container background color */
+        color: white; /* Set quiz container text color */
+    }
+    form#quiz-form {
+        background-color: #836EF9; /* Add background color to the form */
+        padding: 20px; /* Add padding to the form to match the container */
+        border-radius: 20px; /* Add border-radius to match the container */
+    }
+    .question {
+        margin-bottom: 20px;
+    }
+    .logo {
+        display: flex;
+        justify-content:space-around;
+        margin-bottom: 20px;
+    }
+    .logo-image {
+    width: 60%; /* Adjust the width to your desired size */
+    /* You can also set the height to auto if you want the image to maintain its aspect ratio */
+    height: auto;
+}
+    input[type="submit"] {
+        padding: 10px 20px; /* Adjust padding to increase button size */
+        font-size: 16px; /* Adjust font size to increase button size */
+
+    }
+    .correct-answer {
+        color: #00f8a5;
+    }
+    .incorrect-answer {
+        color:#8d0101;
+    }
+</style>
+</head>
+<body>
+
+
+
+
+    <div class="logo">
+        <img src="file:///C:/Users/schol/Auto-GPT/monad-logo.png" alt="Logo" class="logo-image">
+    </div>
+<div class="quiz-container">
+    <h1>Monad Infrastructure Ecosystem Quiz</h1>
+    <form id="quiz-form">
+        <div class="question">
+            <p>1. Which of the below protocols is not a DEX?
+                </p>
+            <label>
+                <input type="radio" name="q1" value="Tayaswap"> Tayaswap
+            </label><br>
+            <label>
+                <input type="radio" name="q1" value="Nitro Finance"> Nitro Finance
+            </label><br>
+            <label>
+                <input type="radio" name="q1" value="Pike Finance"> Pike Finance
+            </label><br>
+            <label>
+                <input type="radio" name="q1" value="Ambient Finance"> Ambient Finance
+            </label><br>
+        </div>
+        <div class="question">
+            <p>2. What is Magma DAO?
+                </p>
+            <label>
+                <input type="radio" name="q2" value="Decentralized Exchange"> Decentralized Exchange
+            </label><br>
+            <label>
+                <input type="radio" name="q2" value="Lending/borrowing Protocol"> Lending/borrowing Protocol
+            </label><br>
+            <label>
+                <input type="radio" name="q2" value="Stablecoin Protocol"> Stablecoin Protocol
+            </label><br>
+            <label>
+                <input type="radio" name="q2" value="Liquid Staking Protocol"> Liquid Staking Protocol
+            </label><br>
+        </div>
+        <div class="question">
+            <p>3. Which of the below DEX is not a native DEX?</p>
+            <label>
+                <input type="radio" name="q3" value="Nitro Finance"> Nitro Finance
+            </label><br>
+            <label>
+                <input type="radio" name="q3" value="Balancer"> Balancer
+            </label><br>
+            <label>
+                <input type="radio" name="q3" value="Shrimp Dex"> Shrimp Dex
+            </label><br>
+            <label>
+                <input type="radio" name="q3" value="Taya swap"> Taya swap
+            </label><br>
+        </div>
+        <div class="question">
+            <p>4. On Primex Finance, users do -</p>
+            <label>
+                <input type="radio" name="q4" value="Spot trading"> Spot trading
+            </label><br>
+            <label>
+                <input type="radio" name="q4" value="Leverage trading"> Leverage trading
+            </label><br>
+            <label>
+                <input type="radio" name="q4" value="Both 1) & 2)"> Both 1) & 2)
+            </label><br>
+            <label>
+                <input type="radio" name="q4" value="Lending / Borrowing"> Lending / Borrowing
+            </label><br>
+            <label>
+                <input type="radio" name="q4" value="All of the above"> All of the above
+            </label><br>
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+    <div id="result"></div>
+</div>
+<script>
+document.getElementById('quiz-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    let score = 0;
+    // Check answers
+    const answers = {
+        q1: 'Tayaswap', // Correct answer for question 1
+        q2: 'Liquid Staking Protocol', // Correct answer for question 2
+        q3: 'Balancer',
+        q4: 'All of the above',
+        // Add more answers here
+    };
+    const form = event.target;
+    for (let i = 1; i <= 4; i++) {
+        const selectedOption = form.querySelector(`input[name="q${i}"]:checked`);
+        if (!selectedOption) {
+            // If no option is selected, color the correct option green and move to the next question
+            const correctAnswer = answers[`q${i}`];
+            const allOptions = form.querySelectorAll(`input[name="q${i}"]`);
+            allOptions.forEach(option => {
+                const optionLabel = option.parentNode;
+                if (option.value === correctAnswer) {
+                    optionLabel.classList.add('correct-answer');
+                } else {
+                    optionLabel.classList.add('incorrect-answer');
+                }
+            });
+            continue;
+        }
+        const selectedValue = selectedOption.value;
+        const correctAnswer = answers[`q${i}`];
+        const label = selectedOption.parentNode;
+        label.classList.remove('correct-answer', 'incorrect-answer');
+        if (selectedValue === correctAnswer) {
+            score++;
+            label.classList.add('correct-answer');
+        } else {
+            label.classList.add('incorrect-answer');
+        }
+        // Mark correct and incorrect options for each question
+        const allOptions = form.querySelectorAll(`input[name="q${i}"]`);
+        allOptions.forEach(option => {
+            const optionLabel = option.parentNode;
+            if (option.value === correctAnswer) {
+                optionLabel.classList.add('correct-answer');
+            } else {
+                optionLabel.classList.add('incorrect-answer');
+            }
+        });
+    }
+    document.getElementById('result').textContent = `You scored ${score} out of 4.`;
+});
+
+window.addEventListener('load', function() {
+    document.getElementById('quiz-form').reset();
+});
+</script>
+</body>
+</html>
+
+
+

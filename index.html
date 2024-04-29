@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monad Quizzes</title>
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #836EF9;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            
+        }
+
+        /* Header Styles */
+        .header {
+            background-color: #3d2487;
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .logo img {
+            width: 200px;
+            height: auto;
+        }
+        
+ 
+
+        .nav {
+            float: right;
+        }
+
+        .nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav ul li {
+            margin-left: 20px;
+        }
+
+        .nav ul li:first-child {
+            margin-left: auto;
+        }
+
+        .nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+        }
+
+        .nav ul li a:hover {
+            border-bottom: 1px solid #fff;
+        }
+
+        /* Main Content Styles */
+        .hero {
+            text-align: center;
+            padding: 100px 0;
+    
+        }
+
+        .hero-title {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .hero-subtitle {
+            font-size: 20px;
+            margin-bottom: 40px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #5FEDDF;
+            color: black;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            margin-right: 15px;
+            margin-bottom: 15px;
+        }
+
+        .btn:hover {
+            background-color: #1c5e57;
+        }
+
+        /* Learning Section Styles */
+        .learning {
+            padding: 80px 0;
+            text-align: center;
+            background-color: #836EF9;;
+        }
+
+        .section-title {
+            font-size: 32px;
+            margin-bottom: 40px;
+        }
+
+        .learning-items {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .learning-item {
+            width: 45%;
+            margin-bottom: 40px;
+        }
+
+        .learning-item img {
+            max-width: 100%;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .learning-item h3 {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+
+        .learning-item p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        .learning-item .btn {
+            display: block;
+            margin: 20px auto;
+        }
+
+        /* Footer Styles */
+        .footer {
+            background-color: #3d2487;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .twitter-link{
+    color: black; /* Change to the desired color */
+    text-decoration: none; /* Remove default underline */
+    transition: color 0.3s; /* Smooth transition for color change */
+}
+
+.twitter-link:hover{
+    color: blue; /* Change to the desired color on hover */
+}
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="file:///C:/Users/schol/Auto-GPT/monad-logo.png" alt="Monad Quizzes Logo" class="logo-img">
+            </a>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <div class="container">
+                <h2 class="hero-title">Test your knowledge with Quizzy!</h2>
+                <p class="hero-subtitle">Choose from a variety of quizzes on different topics.</p>
+                <div>
+                    <a href="MonadL1.html" class="btn btn-primary">Monad L1 Quiz</a>
+                    <a href="MonadDefi.html" class="btn btn-primary">DeFi Eco Quiz</a>
+                    <a href="MonadNFT.html" class="btn btn-primary">NFT Eco Quiz</a>
+                    <a href="MonadInfra.html" class="btn btn-primary">Infra Layer Quiz</a>
+                    <!-- Add more quiz options as needed -->
+                </div>
+            </div>
+        </section>
+
+        <section class="learning">
+            <div class="container">
+                <h2 class="section-title"> Resources to prepare for the quizzes below</h2>
+                <div class="learning-items">
+                    <div class="learning-item">
+                        <h3>Monad Layer 1</h3>
+                        <p>Go & Read threads, docs, and substack to learn more about Monad Layer 1</p>
+                        <a href="" class="btn btn-secondary">Start Learning</a>
+                    </div>
+                    <div class="learning-item">
+                        <h3>DeFi Ecosystem</h3>
+                        <p>Go and read documentation of various DeFi protocols to learn more</p>
+                        <a href="" class="btn btn-secondary">Start Learning</a>
+                    </div>
+                    <div class="learning-item">
+                        <h3>NFT Ecosystem</h3>
+                        <p>Go hang out in discord servers of NFT projects, and check out the art</p>
+                        <a href=# class="btn btn-secondary">Start Learning</a>
+                    </div>
+                    <div class="learning-item">
+                        <h3>Infrastructure Ecosystem</h3>
+                        <p>Go and read documentation of various infrastructure protocols to learn more</p>
+                        <a href=# class="btn btn-secondary">Start Learning</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>For any quiz-related queries or suggestions, DM me on <a href="https://twitter.com/yashcrypto21" class="twitter-link">Twitter</a> or TG</a>; my username is @yashcrypto21</p>
+        </div>
+    </footer>
+</body>
+</html>

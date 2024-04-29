@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz App</title>
+<style>
+    /* Some basic styling */
+    body {
+        font-family: Aeonik Mono;
+        background-color: #200052;
+        color: white;
+    }
+    h1{
+        font-family: "Hoves Pro", sans-serif; /* Apply Hoves Pro font to all headings */
+        font-size: 36px;
+        color: #A0055D;
+        text-align: center;
+    }
+    p {
+        font-size: 22px;
+        color:black; 
+        
+    }
+    label {
+    font-size: 18px; /* Set font size for labels */
+}
+    .quiz-container {
+        max-width: 90%;
+        margin: 20px auto;
+        padding: 20px;
+        border: 2px solid #ccc;
+        border-radius: 20px;
+        background-color: #836EF9; /* Set quiz container background color */
+        color: white; /* Set quiz container text color */
+    }
+    form#quiz-form {
+        background-color: #836EF9; /* Add background color to the form */
+        padding: 20px; /* Add padding to the form to match the container */
+        border-radius: 20px; /* Add border-radius to match the container */
+    }
+    .question {
+        margin-bottom: 20px;
+    }
+    .logo {
+        display: flex;
+        justify-content:space-around;
+        margin-bottom: 20px;
+    }
+    .logo-image {
+    width: 60%; /* Adjust the width to your desired size */
+    /* You can also set the height to auto if you want the image to maintain its aspect ratio */
+    height: auto;
+}
+    input[type="submit"] {
+        padding: 10px 20px; /* Adjust padding to increase button size */
+        font-size: 16px; /* Adjust font size to increase button size */
+
+    }
+    .correct-answer {
+        color: #00f8a5;
+    }
+    .incorrect-answer {
+        color:#8d0101;
+    }
+</style>
+</head>
+<body>
+
+
+
+
+    <div class="logo">
+        <img src="file:///C:/Users/schol/Auto-GPT/monad-logo.png" alt="Logo" class="logo-image">
+    </div>
+<div class="quiz-container">
+    <h1>Monad Layer 1 Quiz</h1>
+    <form id="quiz-form">
+        <div class="question">
+            <p>1. After the launch of Monad's testnet/mainnet, would users be able to use wallets like Metamask, Rabby, and analytical tools like Dune and Etherscan?</p>
+            <label>
+                <input type="radio" name="q1" value="Yes"> Yes
+            </label><br>
+            <label>
+                <input type="radio" name="q1" value="No"> No
+            </label><br>
+        </div>
+        <div class="question">
+            <p>2. Which of the below statements is false?</p>
+            <label>
+                <input type="radio" name="q2" value="Monad is 90% EVM compatible"> Monad is 90% EVM compatible
+            </label><br>
+            <label>
+                <input type="radio" name="q2" value="Monad is a proof of stake network."> Monad is a proof of stake network.
+            </label><br>
+            <label>
+                <input type="radio" name="q2" value="Monad has implemented parallel execution & pipelining to improve performance."> Monad has implemented parallel execution & pipelining to improve performance.
+            </label><br>
+            <label>
+                <input type="radio" name="q2" value="Monad offers full Ethereum RPC compatibility, meaning users can use Metamask, Rabby,    Etherscan, etc."> Monad offers full Ethereum RPC compatibility, meaning users can use Metamask, Rabby,    Etherscan, etc.
+            </label><br>
+        </div>
+        <div class="question">
+            <p>3. Below are the hardware requirements to run a full node on Monad. One of the requirements mentioned is incorrect. Which one is false?</p>
+            <label>
+                <input type="radio" name="q3" value="16-core CPU"> 16-core CPU
+            </label><br>
+            <label>
+                <input type="radio" name="q3" value="32 GB RAM"> 32 GB RAM
+            </label><br>
+            <label>
+                <input type="radio" name="q3" value="2 TB SSD"> 2 TB SSD
+            </label><br>
+            <label>
+                <input type="radio" name="q3" value="1000 Mbit/s bandwidth"> 1000 Mbit/s bandwidth
+            </label><br>
+        </div>
+        <div class="question">
+            <p>4. Monad has introduced optimizations to increase the performance of the blockchain -
+                <br><br> a) Parallel Execution b) Monad BFT c) Deferred Execution d) MonadDb </p>
+            <label>
+                <input type="radio" name="q4" value="Only option a"> Only option a
+            </label><br>
+            <label>
+                <input type="radio" name="q4" value="Both a & b"> Both a & b
+            </label><br>
+            <label>
+                <input type="radio" name="q4" value="All of the above"> All of the above
+            </label><br>
+            <label>
+                <input type="radio" name="q4" value="None of the above"> None of the above
+            </label><br>
+        </div>
+        <div class="question">
+            <p>5. Can any existing dapp currently deployed on EVM chains such as Ethereum, Polygon, Avalanche, etc., be easily deployed by developers on Monad too?</p>
+            <label>
+                <input type="radio" name="q5" value="Yes"> Yes
+            </label><br>
+            <label>
+                <input type="radio" name="q5" value="No"> No
+            </label><br>
+        </div>
+        <div class="question">
+            <p>6. All the dapps on EVM chains like Ethereum, Avalanche, Arbitrum, Polygon, and Optimism can be easily ported to Monad with minimal code changes as well. This is possible because:</p>
+            <label>
+                <input type="radio" name="q6" value="Monad is PoS network"> Monad is PoS network
+            </label><br>
+            <label>
+                <input type="radio" name="q6" value="Monad is a fork of Ethereum"> Monad is a fork of Ethereum
+            </label><br>
+            <label>
+                <input type="radio" name="q6" value="Monad offers 100% EVM compatibility"> Monad offers 100% EVM compatibility
+            </label><br>
+            <label>
+                <input type="radio" name="q6" value="Monad is permissionless"> Monad is permissionless
+            </label><br>
+        </div>
+        <div class="question">
+            <p>7. Users would be able to use wallets like Metamask, Rabby & analytic tools like Dune, Etherscan and you would be able to use your existing etherum public address, private keys because -</p>
+            <label>
+                <input type="radio" name="q7" value="Monad has good partnership with these teams"> Monad has good partnership with these teams
+            </label><br>
+            <label>
+                <input type="radio" name="q7" value="Monad is proof of stake network"> Monad is proof of stake network
+            </label><br>
+            <label>
+                <input type="radio" name="q7" value="Monad offers full Ethereum RPC compatibility"> Monad offers full Ethereum RPC compatibility
+            </label><br>
+            <label>
+                <input type="radio" name="q7" value="None of the above"> None of the above
+            </label><br>
+        </div>
+        <div class="question">
+            <p>8. Can anyone run a full node on Monad?</p>
+            <label>
+                <input type="radio" name="q8" value="Yes, since it is a permissionless platform"> Yes, since it is a permissionless platform
+            </label><br>
+            <label>
+                <input type="radio" name="q8" value="No, a person needs to get permission from the Monad team"> No, a person needs to get permission from the Monad team
+            </label><br>
+        </div>
+        <div class="question">
+            <p>9. Which smart contract language can be used to write smart contracts for dapps on Monad ?</p>
+            <label>
+                <input type="radio" name="q9" value="Solidity"> Solidity
+            </label><br>
+            <label>
+                <input type="radio" name="q9" value="Vyper"> Vyper
+            </label><br>
+            <label>
+                <input type="radio" name="q9" value="Rust"> Rust
+            </label><br>
+            <label>
+                <input type="radio" name="q9" value="Both 1 & 2"> Both 1 & 2
+            </label><br>
+        </div>
+        <div class="question">
+            <p>10. Monad BFT is the name of ________ of monad blockchain -</p>
+            <label>
+                <input type="radio" name="q10" value="Database"> Database
+            </label><br>
+            <label>
+                <input type="radio" name="q10" value="Consensus mechanism"> Consensus mechanism
+            </label><br>
+            <label>
+                <input type="radio" name="q10" value="Virtual machine"> Virtual machine
+            </label><br>
+            <label>
+                <input type="radio" name="q10" value="None of the above"> None of the above
+            </label><br>
+        </div>
+        <div class="question">
+            <p>11. _________ is a technique for implementing parallelism by dividing tasks into a series of smaller tasks which can be processed in parallel.</p>
+            <label>
+                <input type="radio" name="q11" value="Asynchronous I/O"> Asynchronous I/O
+            </label><br>
+            <label>
+                <input type="radio" name="q11" value="Monad DB"> Monad DB
+            </label><br>
+            <label>
+                <input type="radio" name="q11" value="Pipelining"> Pipelining
+            </label><br>
+            <label>
+                <input type="radio" name="q11" value="Deferred Execution"> Deferred Execution
+            </label><br>
+        </div>
+        <div class="question">
+            <p>12. Benefits of the blockchain are -</p>
+            <label>
+                <input type="radio" name="q12" value="Transparency"> Transparency
+            </label><br>
+            <label>
+                <input type="radio" name="q12" value="Permissionless nature"> Permissionless nature
+            </label><br>
+            <label>
+                <input type="radio" name="q12" value="Easily censorable"> Easily censorable
+            </label><br>
+            <label>
+                <input type="radio" name="q12" value="Both option 1 & 2"> Both option 1 & 2
+            </label><br>
+        </div>
+        <div class="question">
+            <p>13. Monad is being built to remove the performance bottlenecks that prevent a blockchain from being highly scalable. Below are some of the performance bottlenecks mentioned for a blockchain. <br> <br>- Inefficient storage access patterns <br> <br>- Single-threaded execution <br> <br>- Very limited execution budget, because consensus can't proceed without execution <br> <br>- Concerns about state growth, and the effect of state growth on future state access costs <br> <br> Which blockchain’s performance bottlenecks is being referred to?</p>
+            <label>
+                <input type="radio" name="q13" value="Solana"> Solana
+            </label><br>
+            <label>
+                <input type="radio" name="q13" value="Ethereum"> Ethereum
+            </label><br>
+            <label>
+                <input type="radio" name="q13" value="Sui"> Sui
+            </label><br>
+            <label>
+                <input type="radio" name="q13" value="Aptos"> Aptos
+            </label><br>
+        </div>
+        <div class="question">
+            <p>14. Monad is being built with a focus solely on performance, and not enough attention is being given to making it as decentralized as possible</p>
+            <label>
+                <input type="radio" name="q14" value="Yes"> Yes
+            </label><br>
+            <label>
+                <input type="radio" name="q14" value="No"> No
+            </label><br>
+        </div>
+        <div class="question">
+            <p>15. How much time does it take for each block to be created on Monad?</p>
+            <label>
+                <input type="radio" name="q15" value="12 sec (same as ethereum)"> 12 sec (same as ethereum)
+            </label><br>
+            <label>
+                <input type="radio" name="q15" value="400 ms (same as solana)"> 400 ms (same as solana)
+            </label><br>
+            <label>
+                <input type="radio" name="q15" value="1 sec"> 1 sec
+            </label><br>
+            <label>
+                <input type="radio" name="q15" value="2 sec"> 2 sec
+            </label><br>
+        </div>
+        <div class="question">
+            <p>16. Pending transactions are stored in ________?</p>
+            <label>
+                <input type="radio" name="q16" value="Monad DB"> Monad DB
+            </label><br>
+            <label>
+                <input type="radio" name="q16" value="Mempool"> Mempool
+            </label><br>
+            <label>
+                <input type="radio" name="q16" value="Monad BFT"> Monad BFT
+            </label><br>
+            <label>
+                <input type="radio" name="q16" value="Blocks"> Blocks
+            </label><br>
+        </div>
+        <div class="question">
+            <p>17. Finality (transactions being confirmed and cannot be undone) in Monad is:</p>
+            <label>
+                <input type="radio" name="q17" value="12 sec"> 12 sec
+            </label><br>
+            <label>
+                <input type="radio" name="q17" value="30 sec"> 30 sec
+            </label><br>
+            <label>
+                <input type="radio" name="q17" value="4 sec"> 4 sec
+            </label><br>
+            <label>
+                <input type="radio" name="q17" value="1 sec"> 1 sec
+            </label><br>
+        </div>
+        <div class="question">
+            <p>18. Consensus is the process of nodes coming to agreement about the official ordering of _______?</p>
+            <label>
+                <input type="radio" name="q18" value="Signatures"> Signatures
+            </label><br>
+            <label>
+                <input type="radio" name="q18" value="Public Addresses"> Public Addresses
+            </label><br>
+            <label>
+                <input type="radio" name="q18" value="Transactions"> Transactions
+            </label><br>
+            <label>
+                <input type="radio" name="q18" value="None of the above"> None of the above
+            </label><br>
+        </div>
+        <div class="question">
+            <p>19. __________ is the process of actually executing those transactions and updating the state.</p>
+            <label>
+                <input type="radio" name="q19" value="Parrallelization"> Parrallelization
+            </label><br>
+            <label>
+                <input type="radio" name="q19" value="Pipelining"> Pipelining
+            </label><br>
+            <label>
+                <input type="radio" name="q19" value="Execution"> Execution
+            </label><br>
+            <label>
+                <input type="radio" name="q19" value="Consensus"> Consensus
+            </label><br>
+        </div>
+        <div class="question">
+            <p>20. There are two types of costs users need to pay when transacting on the Monad network.
+            One is called execution cost, which a user pays for getting their transaction executed. The              
+            other is called carriage cost, which a user pay for:</p>
+            <label>
+                <input type="radio" name="q20" value="Getting their transaction executed faster than other users"> Getting their transaction executed faster than other users
+            </label><br>
+            <label>
+                <input type="radio" name="q20" value="Getting their transaction included in the block (consensus)"> Getting their transaction included in the block (consensus)
+            </label><br>
+            <label>
+                <input type="radio" name="q20" value="Getting a guarantee that their transaction will be executed for sure within 500 millisecond"> Getting a guarantee that their transaction will be executed for sure within 500 millisecond
+            </label><br>
+            <label>
+                <input type="radio" name="q20" value="Tipping to validators for their work"> Tipping to validators for their work
+            </label><br>
+        </div>
+        <div class="question">
+            <p>21. In monad, transactions are executed in parallel but the result of a series of transactions is the same as if they were done sequentially (similar to ethereum)</p>
+            <label>
+                <input type="radio" name="q21" value="Yes, Monad blocks are like ethereum blocks (a linear order of transactions)"> Yes, Monad blocks are like ethereum blocks (a linear order of transactions)
+            </label><br>
+            <label>
+                <input type="radio" name="q21" value="No, Its not mathematically possible"> No, Its not mathematically possible
+            </label><br>
+        </div>
+        <div class="question">
+            <p>22. Monad DB is a _________ for storing blockchain state.</p>
+            <label>
+                <input type="radio" name="q22" value="Virtual Machine"> Virtual Machine
+            </label><br>
+            <label>
+                <input type="radio" name="q22" value="Mempool"> Mempool
+            </label><br>
+            <label>
+                <input type="radio" name="q22" value="Database"> Database
+            </label><br>
+            <label>
+                <input type="radio" name="q22" value="Name of blocks"> Name of blocks
+            </label><br>
+        </div>
+        <div class="question">
+            <p>23. How many transactions per day would the Monad blockchain process?</p>
+            <label>
+                <input type="radio" name="q23" value="10 Million"> 10 Million
+            </label><br>
+            <label>
+                <input type="radio" name="q23" value="100 Million"> 100 Million
+            </label><br>
+            <label>
+                <input type="radio" name="q23" value="1 Billion"> 1 Billion
+            </label><br>
+            <label>
+                <input type="radio" name="q23" value="10 Billion"> 10 Billion
+            </label><br>
+        </div>
+        <div class="question">
+            <p>24. Being EVM compatible, Monad Layer1 receives the benefit of:</p>
+            <label>
+                <input type="radio" name="q24" value="EVM network effects"> EVM network effects
+            </label><br>
+            <label>
+                <input type="radio" name="q24" value="EVM (Solidity & Vyper) apps account for 96% of TVL in DeFi, easy to onboard liquidity to Monad"> EVM (Solidity & Vyper) apps account for 96% of TVL in DeFi, easy to onboard liquidity to Monad
+            </label><br>
+            <label>
+                <input type="radio" name="q24" value="EVM bytecode is battle tested & reliable"> EVM bytecode is battle tested & reliable
+            </label><br>
+            <label>
+                <input type="radio" name="q24" value="All of the above"> All of the above
+            </label><br>
+        </div>
+        <div class="question">
+            <p>25. What makes Monad a good platform to launch a dapp like an order book perp dex?</p>
+            <label>
+                <input type="radio" name="q25" value="Cheap transaction Fees"> Cheap transaction Fees
+            </label><br>
+            <label>
+                <input type="radio" name="q25" value="Fast Finality Time (i.e 1 sec on Monad)"> Fast Finality Time (i.e 1 sec on Monad)
+            </label><br>
+            <label>
+                <input type="radio" name="q25" value="High TPS"> High TPS
+            </label><br>
+            <label>
+                <input type="radio" name="q25" value="All of the above"> All of the above
+            </label><br>
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+    <div id="result"></div>
+</div>
+<script>
+document.getElementById('quiz-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    let score = 0;
+    // Check answers
+    const answers = {
+        q1: 'Yes', // Correct answer for question 1
+        q2: 'Monad is 90% EVM compatible', // Correct answer for question 2
+        q3: '1000 Mbit/s bandwidth', // Correct answer for question 3
+        q4: 'All of the above', // Correct answer for question 4
+        q5: 'Yes', // Correct answer for question 5
+        q6: 'Monad offers 100% EVM compatibility', // Correct answer for question 6
+        q7: 'Monad offers full Ethereum RPC compatibility', // Correct answer for question 7
+        q8: 'Yes, since it is a permissionless platform', // Correct answer for question 8
+        q9: 'Both 1 & 2', // Correct answer for question 9
+        q10: 'Consensus mechanism', // Correct answer for question 10
+        q11: 'Pipelining', // Correct answer for question 11
+        q12: 'Both option 1 & 2', // Correct answer for question 12
+        q13: 'Ethereum', // Correct answer for question 13
+        q14: 'No', // Correct answer for question 14
+        q15: '1 sec', // Correct answer for question 15
+        q16: 'Mempool', // Correct answer for question 16
+        q17: '1 sec', // Correct answer for question 17
+        q18: 'Transactions', // Correct answer for question 18
+        q19: 'Execution', // Correct answer for question 19
+        q20: 'Getting their transaction included in the block (consensus)', // Correct answer for question 20
+        q21: 'Yes', // Correct answer for question 21
+        q22: 'Database', // Correct answer for question 22
+        q23: '1 Billion', // Correct answer for question 23
+        q24: 'All of the above', // Correct answer for question 24
+        q25: 'All of the above' // Correct answer for question 25
+        // Add more answers here
+    };
+    const form = event.target;
+    for (let i = 1; i <= 25; i++) {
+        const selectedOption = form.querySelector(`input[name="q${i}"]:checked`);
+        if (!selectedOption) {
+            // If no option is selected, color the correct option green and move to the next question
+            const correctAnswer = answers[`q${i}`];
+            const allOptions = form.querySelectorAll(`input[name="q${i}"]`);
+            allOptions.forEach(option => {
+                const optionLabel = option.parentNode;
+                if (option.value === correctAnswer) {
+                    optionLabel.classList.add('correct-answer');
+                } else {
+                    optionLabel.classList.add('incorrect-answer');
+                }
+            });
+            continue;
+        }
+        const selectedValue = selectedOption.value;
+        const correctAnswer = answers[`q${i}`];
+        const label = selectedOption.parentNode;
+        label.classList.remove('correct-answer', 'incorrect-answer');
+        if (selectedValue === correctAnswer) {
+            score++;
+            label.classList.add('correct-answer');
+        } else {
+            label.classList.add('incorrect-answer');
+        }
+        // Mark correct and incorrect options for each question
+        const allOptions = form.querySelectorAll(`input[name="q${i}"]`);
+        allOptions.forEach(option => {
+            const optionLabel = option.parentNode;
+            if (option.value === correctAnswer) {
+                optionLabel.classList.add('correct-answer');
+            } else {
+                optionLabel.classList.add('incorrect-answer');
+            }
+        });
+    }
+    document.getElementById('result').textContent = `You scored ${score} out of 25.`;
+});
+
+window.addEventListener('load', function() {
+    document.getElementById('quiz-form').reset();
+});
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
