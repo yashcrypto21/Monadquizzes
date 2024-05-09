@@ -71,10 +71,12 @@
 
 
     <div class="logo">
-        <img src="monad-logo.png" alt="Logo" class="logo-image">
+        <a href="index.html" class="logo">
+        <img src="file:///C:/Users/schol/Auto-GPT/monad-logo.png" alt="Logo" class="logo-image">
+    </a>
     </div>
 <div class="quiz-container">
-    <h1>Monad Layer 1 Quiz</h1>
+    <h1> Monad Layer 1 Quiz </h1>
     <form id="quiz-form">
         <div class="question">
             <p>1. After the launch of Monad's testnet/mainnet, would users be able to use wallets like Metamask, Rabby, and analytical tools like Dune and Etherscan?</p>
@@ -462,7 +464,7 @@ document.getElementById('quiz-form').addEventListener('submit', function(event) 
         // Add more answers here
     };
     const form = event.target;
-    for (let i = 1; i <= 25; i++) {
+    for (let i = 1; i <= Object.keys(answers)?.length; i++){
         const selectedOption = form.querySelector(`input[name="q${i}"]:checked`);
         if (!selectedOption) {
             // If no option is selected, color the correct option green and move to the next question
@@ -499,7 +501,7 @@ document.getElementById('quiz-form').addEventListener('submit', function(event) 
             }
         });
     }
-    document.getElementById('result').textContent = `You scored ${score} out of 25.`;
+    document.getElementById('result').textContent = `You scored ${score} out of ${Object.keys(answers)?.length||"-"}.`;
 });
 
 window.addEventListener('load', function() {
