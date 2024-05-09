@@ -72,7 +72,7 @@
 
     <div class="logo">
         <a href="index.html" class="logo">
-        <img src="monad-logo.png" alt="Logo" class="logo-image">
+        <img src="file:///C:/Users/schol/Auto-GPT/monad-logo.png" alt="Logo" class="logo-image">
     </a>
     </div>
 <div class="quiz-container">
@@ -195,9 +195,10 @@
         </div>
         <div>
             <div class="question">
-                <p>Dyson Finance is a DEX that democratizes liquidity for everyone, driving the paradigm shift of "Retail Investors as LPs."
+                <p>8. Dyson Finance is a DEX that democratizes liquidity for everyone, driving the paradigm shift of "Retail Investors as LPs."
 
-                    It provide its service through two features. The name of those features are - 
+
+                    It provide its service through two features. <br><br>The name of those features are -
                 </p>
                 <label>
                     <input type="radio" name="q8" value="Concentrated Liquidity, Dynamic Pools"> Concentrated Liquidity, Dynamic Pools
@@ -212,6 +213,81 @@
                     <input type="radio" name="q8" value="Dual investment, MEV extraction"> Dual investment, MEV extraction
                 </label><br>
         </div>
+       
+        <div>
+            <div class="question">
+                <p>9. Unlike other AMMs that provide 50/50 weighted pools, Blancer enables users to build pools with custom weighting such as 80/20, 60/40.
+                    <br><br>What is the core benefit of providing liquidity to such custom weighted pools?
+                   
+                </p>
+                <label>
+                    <input type="radio" name="q9" value="LPs can easily manage impermanent loss for a particular token"> LPs can easily manage impermanent loss for a particular token
+                </label><br>
+                <label>
+                    <input type="radio" name="q9" value="Less slippage for traders"> Less slippage for traders
+                </label><br>
+                <label>
+                 <input type="radio" name="q9" value="Dynamic fees" >Dynamic fees
+                </label><br>
+                <label>
+                    <input type="radio" name="q9" value="These pools are better suited for stablecoin pairs"> These pools are better suited for stablecoin pairs
+                </label><br>
+        </div>
+        <div>
+            <div class="question">
+                <p>10. Catalyst AMM can be deployed on any chain and allows liquidity to be sourced from any other connected ecosystem such as Ethereum, Cosmos and L2s.
+
+
+                    Is the statement above true or false?
+                   
+                   
+                </p>
+                <label>
+                    <input type="radio" name="q10" value="True"> True
+                </label><br>
+                <label>
+                    <input type="radio" name="q10" value="False"> False
+                </label>
+   
+        </div>
+        <div>
+            <div class="question">
+                <p>11. Pancake swap is the _______ DEX in terms of TVL.
+                </p>
+                <label>
+                    <input type="radio" name="q11" value="Biggest"> Biggest
+                </label><br>
+                <label>
+                    <input type="radio" name="q11" value="Second Biggest"> Second Biggest
+                </label><br>
+                <label>
+                    <input type="radio" name="q11" value="Third Biggest"> Third Biggest
+                </label><br>
+                <label>
+                    <input type="radio" name="q11" value="Fourth Biggest"> Fourth Biggest
+                </label><br>
+   
+        </div>
+        <div>
+            <div class="question">
+                <p>12.Which is the oldest DEX that will be launching on Monad?
+                </p>
+                <label>
+                    <input type="radio" name="q12" value="Pancake Swap"> Pancake Swap
+                </label><br>
+                <label>
+                    <input type="radio" name="q12" value="Primex Finance"> Primex Finance
+                </label><br>
+                <label>
+                    <input type="radio" name="q12" value="Ambient Finance"> Ambient Finance
+                </label><br>
+                <label>
+                    <input type="radio" name="q12" value="Balancer"> Balancer
+                </label><br>
+   
+        </div>
+
+    
         <input type="submit" value="Submit">
     </form>
     <div id="result"></div>
@@ -228,8 +304,14 @@ document.getElementById('quiz-form').addEventListener('submit', function(event) 
         q4: 'All of the above',
         q5: 'Both option 1) and 2)',
         q6: 'It combines concentrated (i.e., UniV3 style), ambient (i.e., UniV2 style), and knockout liquidity (which behaves like limit orders)', // Correct answer for question 5
-        q7:  'Lend, borrow, swap'
-        q8:'Dual Investment, Dynamic AMM' // Add more answers here
+        q7:  'Lend, borrow, swap',
+        q8:  'Dual Investment, Dynamic AMM',
+        q9:  'LPs can easily manage impermanent loss for a particular token',
+        q10: 'True',
+        q11: 'Second Biggest',
+        q12:'Balancer',// Add more answers here
+
+       
     };
     const form = event.target;
     for (let i = 1; i <= Object.keys(answers)?.length; i++) {
