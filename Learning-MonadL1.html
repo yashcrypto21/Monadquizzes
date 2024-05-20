@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Section - Monad Quizzes</title>
+    <style>
+        /* Paste the CSS styles from your homepage here */
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #836EF9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        .header {
+            background-color: #3d2487;
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .logo img {
+            width: 200px;
+            height: auto;
+        }
+        
+ 
+
+        .nav {
+            float: right;
+        }
+
+        .nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav ul li {
+            margin-left: 20px;
+        }
+
+        .nav ul li:first-child {
+            margin-left: auto;
+        }
+
+        .nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+        }
+
+        .nav ul li a:hover {
+            border-bottom: 1px solid #fff;
+        }
+
+        /* Main Content Styles */
+        .hero {
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .hero-title {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .hero-subtitle {
+            font-size: 20px;
+            margin-bottom: 40px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #5FEDDF;
+            color: black;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
+            margin-right: 15px;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+
+        .btn:hover {
+            background-color: #1c5e57;
+        }
+
+        /* Learning Section Styles */
+        .learning {
+            padding: 100px 0 50px; /* Adjusted padding */
+            text-align: center;
+            background-color: #836EF9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px; /* Added margin-top */
+        }
+
+        .section-title {
+            font-size: 32px;
+            margin-bottom: 40px; /* Increased margin */
+            color: #fff;
+        }
+
+        .learning-items {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1000px; /* Added max-width */
+            width: 100%; /* Added width */
+        }
+
+        .learning-item {
+            width: calc(30% - 20px); /* Adjusted width */
+            margin-bottom: 40px;
+        }
+
+        .learning-item img {
+            max-width: 100%;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .learning h2 {
+    color: black;
+    font-size: 60px; /* Adjust the font size as needed */
+}
+
+        .learning-item h3 {
+            font-size: 24px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        .learning-item p {
+            font-size: 18px;
+            margin-top: 10px;
+            color: #ccc;
+        }
+
+        .learning-item ul {
+            list-style: none;
+            margin-top: 10px;
+            padding-left: 0;
+        }
+
+        .learning-item ul li {
+            margin-bottom: 5px;
+            color: #aaa;
+        }
+
+        /* Footer Styles */
+        .footer {
+            background-color: #3d2487;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .twitter-link{
+            color: black; /* Change to the desired color */
+            text-decoration: none; /* Remove default underline */
+            transition: color 0.3s; /* Smooth transition for color change */
+        }
+
+        .twitter-link:hover{
+            color: blue; /* Change to the desired color on hover */
+        }
+
+        /* Other Logos Styles */
+        .other-logos {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .other-logos a {
+            display: inline-block;
+            width: 48%;
+        }
+
+        .other-logos img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <<a href="index.html" class="logo">
+                <img src="file:///C:/Users/schol/Auto-GPT/monad-logo.png" alt="Monad Quizzes Logo" class="logo-img">
+            </a>
+            
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="learning">
+            <div class="container">
+                
+                <h2 class="section-title">Monad Layer 1</h2>
+                <div class="learning-items">
+                    <div class="learning-item">
+                        <button class="btn">Docs / Whitepaper</button>
+                        <p></p>
+                        <ul>
+                            <li><a href="https://docs.monad.xyz/">Monad Docs</a></li>
+                            
+                            <!-- Add more links as needed -->
+                        </ul>
+                    </div>
+                    <div class="learning-item">
+                        <button class="btn">Blogs</button>
+                        <p></p>
+                        <ul>
+                            <li><a href="https://monadlabs.substack.com/">Monad Official Substack</a></li>
+                            <li><a href="https://www.theblock.co/post/287257/monad-labs-raises-225-million-in-funding-round-led-by-paradigm">Monad raises $225 Million in funding round led by paradigm</a></li>
+                            <!-- Add more links as needed -->
+                        </ul>
+                    </div>
+                    <div class="learning-item">
+                        <button class="btn">Threads</button>
+                        <p></p>
+                        <ul>
+                            <li><a href="https://x.com/jinglingcookies/status/1709584364781314396">What is Monad?</a></li>
+                            <li><a href="https://x.com/a_aris_/status/1758549695507365995">Monad TLDR </a></li>
+                            <li><a href="https://x.com/keoneHD/status/1729908586514383127">Keone on what differentiates Monad </a></li>
+                            
+                            <!-- Add more links as needed -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>For any queries or suggestions, DM me on <a href="https://twitter.com/yashcrypto21" class="twitter-link">Twitter</a> or TG</a>; my username is @yashcrypto21</p>
+        </div>
+    </footer>
+</body>
+</html>
+
