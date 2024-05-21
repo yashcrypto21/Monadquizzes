@@ -106,9 +106,10 @@
             text-decoration: none;
             border-radius: 10px;
             transition: background-color 0.3s ease;
-            margin-right: 15px;
             margin-bottom: 15px;
             font-size: 20px;
+            width: 100%; /* Added width to make buttons full width */
+            box-sizing: border-box; /* Ensures padding doesn't affect button width */
         }
 
         .btn:hover {
@@ -140,8 +141,8 @@
         }
 
         .learning-item {
-            width: calc(30% - 20px); /* Adjusted width */
-            margin-bottom: 40px;
+            flex: 1; /* Each item takes equal space */
+            margin: 0 10px; /* Adjust spacing between items */
         }
 
         .learning-item img {
@@ -251,6 +252,26 @@
             .learning-item ul li {
                 font-size: 12px;
             }
+
+            .learning-items {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .learning-item {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .other-logos {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .other-logos a {
+                width: 100%;
+                margin-bottom: 10px;
+            }
         }
     </style>
 </head>
@@ -266,44 +287,39 @@
     <main class="main">
         <section class="learning">
             <div class="container">
-                <h2 class="section-title">Monad Layer 1</h2>
+                <h2 class="section-title">PancakeSwap</h2>
                 <div class="learning-items">
                     <div class="learning-item">
-                        <button class="btn">Docs / Whitepaper</button>
+                        <button class="btn">Docs/Blogs</button>
                         <p></p>
                         <ul>
-                            <li><a href="#">Link 1</a></li>
+                            <li><a href="https://docs.pancakeswap.finance/">Official Docs</a></li>
+                            <li><a href=" https://blog.pancakeswap.finance/">Official Blog</a></li>
+                            
                             <!-- Add more links as needed -->
                         </ul>
                     </div>
+                   
                     <div class="learning-item">
-                        <button class="btn">Blogs</button>
+                        <button class="btn">Threads</button>
                         <p></p>
                         <ul>
-                            <li><a href="#">Link 1</a></li>
-                            <li><a href="#">Link 2</a></li>
+                            <li><a href="https://x.com/secuestpcs/status/1770047018221601189">An intro to PancakeSwap V4</a></li>
+                            <li><a href="https://x.com/michaelycrypto/status/1721417843420655791
+                                ">PancakeSwap adopts vote escrow (ve) tokenomics model</a></li>
+    
                             <!-- Add more links as needed -->
                         </ul>
-                        </div>
-                        <div class="learning-item">
-                            <button class="btn">Threads</button>
-                            <p></p>
-                            <ul>
-                                <li><a href="#">Link 1</a></li>
-                                <li><a href="#">Link 2</a></li>
-                                <li><a href="#">Link 3</a></li>
-                                <!-- Add more links as needed -->
-                            </ul>
-                        </div>
-                        </div>
-                        </section>
-                        </main>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
                         
-                        <footer class="footer">
-                        <div class="container">
-                            <p>For any queries or suggestions, DM me on <a href="https://twitter.com/yashcrypto21" class="twitter-link">Twitter</a> or TG; my username is @yashcrypto21</p>
-                        </div>
-                        </footer>
-                        </body>
-                        </html>
-                        
+    <footer class="footer">
+        <div class="container">
+            <p>For any queries or suggestions, DM me on <a href="https://twitter.com/yashcrypto21" class="twitter-link">Twitter</a> or TG; my username is @yashcrypto21</p>
+        </div>
+    </footer>
+</body>
+</html>
