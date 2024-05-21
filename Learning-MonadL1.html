@@ -35,6 +35,10 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            width: 100%; /* Ensures header spans full width */
+            position: fixed; /* Fixes header position */
+            top: 0; /* Places header at the top */
+            z-index: 1000; /* Ensures header is above other content */
         }
 
         .logo {
