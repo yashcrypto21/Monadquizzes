@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learning Section - Monad Quizzes</title>
     <style>
         /* Paste the CSS styles from your homepage here */
@@ -31,16 +30,12 @@
 
         /* Header Styles */
         .header {
-    background-color: #3d2487;
-    padding: 20px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%; /* Set the header to take up full width */
-    position: fixed; /* Fixed position to stick to the top */
-    top: 0; /* Position at the top */
-}
-
+            background-color: #3d2487;
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
         .logo {
             color: #fff;
@@ -152,9 +147,9 @@
         }
 
         .learning h2 {
-    color: black;
-    font-size: 60px; /* Adjust the font size as needed */
-}
+            color: black;
+            font-size: 60px; /* Adjust the font size as needed */
+        }
 
         .learning-item h3 {
             font-size: 24px;
@@ -190,13 +185,14 @@
             width: 100%;
             bottom: 0;
         }
-        .twitter-link{
+        
+        .twitter-link {
             color: black; /* Change to the desired color */
             text-decoration: none; /* Remove default underline */
             transition: color 0.3s; /* Smooth transition for color change */
         }
 
-        .twitter-link:hover{
+        .twitter-link:hover {
             color: blue; /* Change to the desired color on hover */
         }
 
@@ -217,22 +213,55 @@
             max-width: 100%;
             height: auto;
         }
+
+        /* Media Query for Smaller Screens */
+        @media only screen and (max-width: 600px) {
+            .hero-title {
+                font-size: 24px;
+            }
+
+            .hero-subtitle {
+                font-size: 16px;
+            }
+
+            .btn {
+                font-size: 16px;
+            }
+
+            .section-title {
+                font-size: 24px;
+            }
+
+            .learning h2 {
+                font-size: 40px;
+            }
+
+            .learning-item h3 {
+                font-size: 20px;
+            }
+
+            .learning-item p {
+                font-size: 14px;
+            }
+
+            .learning-item ul li {
+                font-size: 12px;
+            }
+        }
     </style>
 </head>
 <body>
     <header class="header">
         <div class="container">
-            <<a href="index.html" class="logo">
+            <a href="index.html" class="logo">
                 <img src="monad-logo.png" alt="Monad Quizzes Logo" class="logo-img">
             </a>
-            
         </div>
     </header>
 
     <main class="main">
         <section class="learning">
             <div class="container">
-                
                 <h2 class="section-title">Monad Layer 1</h2>
                 <div class="learning-items">
                     <div class="learning-item">
@@ -240,7 +269,6 @@
                         <p></p>
                         <ul>
                             <li><a href="https://docs.monad.xyz/">Monad Docs</a></li>
-                            
                             <!-- Add more links as needed -->
                         </ul>
                     </div>
@@ -252,28 +280,26 @@
                             <li><a href="https://www.theblock.co/post/287257/monad-labs-raises-225-million-in-funding-round-led-by-paradigm">Monad raises $225 Million in funding round led by paradigm</a></li>
                             <!-- Add more links as needed -->
                         </ul>
-                    </div>
-                    <div class="learning-item">
-                        <button class="btn">Threads</button>
-                        <p></p>
-                        <ul>
-                            <li><a href="https://x.com/jinglingcookies/status/1709584364781314396">What is Monad?</a></li>
-                            <li><a href="https://x.com/a_aris_/status/1758549695507365995">Monad TLDR </a></li>
-                            <li><a href="https://x.com/keoneHD/status/1729908586514383127">Keone on what differentiates Monad </a></li>
-                            
-                            <!-- Add more links as needed -->
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="container">
-            <p>For any queries or suggestions, DM me on <a href="https://twitter.com/yashcrypto21" class="twitter-link">Twitter</a> or TG</a>; my username is @yashcrypto21</p>
-        </div>
-    </footer>
-</body>
-</html>
-
+                        </div>
+                        <div class="learning-item">
+                            <button class="btn">Threads</button>
+                            <p></p>
+                            <ul>
+                                <li><a href="https://x.com/jinglingcookies/status/1709584364781314396">What is Monad?</a></li>
+                                <li><a href="https://x.com/a_aris_/status/1758549695507365995">Monad TLDR </a></li>
+                                <li><a href="https://x.com/keoneHD/status/1729908586514383127">Keone on what differentiates Monad </a></li>
+                                <!-- Add more links as needed -->
+                            </ul>
+                        </div>
+                        </div>
+                        </section>
+                        </main>
+                        
+                        <footer class="footer">
+                        <div class="container">
+                            <p>For any queries or suggestions, DM me on <a href="https://twitter.com/yashcrypto21" class="twitter-link">Twitter</a> or TG; my username is @yashcrypto21</p>
+                        </div>
+                        </footer>
+                        </body>
+                        </html>
+                        
