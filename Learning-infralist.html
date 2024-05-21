@@ -93,7 +93,8 @@
 
         .btn {
             display: inline-block;
-            padding: 15px 30px;
+            padding: 15px;
+            width: 200px; /* Set fixed width for buttons */
             background-color: #5FEDDF;
             color: black;
             text-decoration: none;
@@ -101,6 +102,7 @@
             transition: background-color 0.3s ease;
             margin: 10px; /* Adjusted margin */
             font-size: 20px;
+            text-align: center; /* Ensure text is centered */
         }
 
         .btn:hover {
@@ -124,14 +126,13 @@
         .learning-items {
             display: flex;
             flex-wrap: wrap; /* Allow items to wrap */
-            justify-content: space-around; /* Center items with space */
+            justify-content: center; /* Center items horizontally */
             max-width: 1000px; /* Added max-width */
             margin: 0 auto; /* Center items */
         }
 
         .learning-item {
-            flex: 1 1 30%; /* Adjusted flex basis */
-            margin-bottom: 20px;
+            margin: 10px; /* Added margin */
             text-align: center; /* Center align the text */
         }
 
@@ -174,7 +175,7 @@
 <main class="main">
     <section class="learning">
         <div class="container">
-            <h2 class="section-title">Monad's DeFi Eco</h2>
+            <h2 class="section-title">Monad's Infrastructure Eco</h2>
             <div class="learning-items">
                 <!-- Updated buttons with provided values and links -->
                 <div class="learning-item"><a href="Switchboard.html" class="btn">Switchboard</a></div>
